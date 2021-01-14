@@ -1,0 +1,1139 @@
+{
+  "vulnerabilities": [
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N/RL:O",
+      "alternativeIds": [],
+      "creationTime": "2019-03-07T12:44:14.822656Z",
+      "credit": [
+        "Jonathan Birch of Microsoft Corporation"
+      ],
+      "cvssScore": 7.4,
+      "description": "## Overview\n[Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) is a set of .NET API's that are included in the default .NET Core application model.\n\nAffected versions of this package are vulnerable to Authentication Bypass by Spoofing due to the way they parse URL's. An attacker could use it to bypass security logic intended to ensure that a user-provided URL belonged to a specific hostname or a subdomain of that hostname. \r\nTo exploit the vulnerability, an attacker must provide a URL string to an application that attempts to verify that the URL belongs to a specific hostname or to a subdomain of that hostname. The application must then make an HTTP request to the attacker-provided URL either directly or by sending a processed version of the attacker-provided URL to a web browser.\n## Remediation\nUpgrade `Microsoft.NETCore.App` to version 2.1.8, 2.2.2 or higher.\n## References\n- [GitHub Issue](https://github.com/dotnet/announcements/issues/97)\n- [Microsoft Security Portal](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0657)\n- [RedHat Bugzilla Bug](https://bugzilla.redhat.com/show_bug.cgi?id=1673891)\n",
+      "disclosureTime": "2019-02-12T00:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2.1.8",
+        "2.2.2"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-MICROSOFTNETCOREAPP-173754",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0657"
+        ],
+        "CWE": [
+          "CWE-290"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2020-06-12T14:36:41.870760Z",
+      "moduleName": "microsoft.netcore.app",
+      "packageManager": "nuget",
+      "packageName": "Microsoft.NETCore.App",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-03-06T00:18:35Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/dotnet/announcements/issues/97"
+        },
+        {
+          "title": "Microsoft Security Portal",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0657"
+        },
+        {
+          "title": "RedHat Bugzilla Bug",
+          "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1673891"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2.1.0,2.1.8)",
+          "[2.2.0,2.2.2)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Authentication Bypass by Spoofing",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "Microsoft.NETCore.App@2.2.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "Microsoft.NETCore.App",
+      "version": "2.2.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-05-15T16:27:39.878053Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n\n[Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) is a set of .NET API's that are included in the default .NET Core application model.\n\n\nAffected versions of this package are vulnerable to Denial of Service (DoS).\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its intended and legitimate users.\r\n\r\nUnlike other vulnerabilities, DoS attacks usually do not aim at breaching security. Rather, they are focused on making websites and services unavailable to genuine users resulting in downtime.\r\n\r\nOne popular Denial of Service vulnerability is DDoS (a Distributed Denial of Service), an attack that attempts to clog network pipes to the system by generating a large volume of traffic from many machines.\r\n\r\nWhen it comes to open source libraries, DoS vulnerabilities allow attackers to trigger such a crash or crippling of the service by using a flaw either in the application code or from the use of open source libraries.\r\n\r\nTwo common types of DoS vulnerabilities:\r\n\r\n* High CPU/Memory Consumption- An attacker sending crafted requests that could cause the system to take a disproportionate amount of time to process. For example, [commons-fileupload:commons-fileupload](SNYK-JAVA-COMMONSFILEUPLOAD-30082).\r\n\r\n* Crash - An attacker sending crafted requests that could cause the system to crash. For Example,  [npm `ws` package](npm:ws:20171108)\n\n## Remediation\n\nUpgrade `Microsoft.NETCore.App` to version 2.1.11, 2.2.5 or higher.\n\n\n## References\n\n- [Microsoft Release Notes](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2.5/2.2.5.md)\n\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0982)\n",
+      "disclosureTime": "2019-05-14T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2.1.11",
+        "2.2.5"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-MICROSOFTNETCOREAPP-174710",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0982"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2020-05-13T15:22:23.048741Z",
+      "moduleName": "microsoft.netcore.app",
+      "packageManager": "nuget",
+      "packageName": "Microsoft.NETCore.App",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-05-15T16:27:51Z",
+      "references": [
+        {
+          "title": "Microsoft Release Notes",
+          "url": "https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2.5/2.2.5.md"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0982"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2.1.0, 2.1.11)",
+          "[2.2.0, 2.2.5)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Denial of Service (DoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "Microsoft.NETCore.App@2.2.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "Microsoft.NETCore.App",
+      "version": "2.2.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+      "alternativeIds": [],
+      "creationTime": "2019-07-10T12:46:11.368301Z",
+      "credit": [
+        "Datalust"
+      ],
+      "cvssScore": 5.4,
+      "description": "## Overview\n\nAffected versions of this package are vulnerable to Open Redirect. A spoofing vulnerability exists that could lead to an redirection. An attacker who successfully exploits this vulnerability could redirect a targeted user to a malicious website.\n## Remediation\nUpgrade `microsoft.netcore.app` to version 2.1.12, 2.2.6 or higher.\n## References\n- [GitHub Commit](https://github.com/aspnet/AspNetCore/commit/b9c8f3491937c5c756cfc244d1da5a956faca19e)\n- [GitHub Issue](https://github.com/aspnet/Announcements/issues/373)\n- [Microsoft Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1075)\n",
+      "disclosureTime": "2019-07-09T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2.1.12",
+        "2.2.6"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-MICROSOFTNETCOREAPP-451559",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-1075"
+        ],
+        "CWE": [
+          "CWE-601"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2020-06-12T14:37:05.822041Z",
+      "moduleName": "microsoft.netcore.app",
+      "packageManager": "nuget",
+      "packageName": "Microsoft.NETCore.App",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-07-10T12:46:32Z",
+      "references": [
+        {
+          "title": "GitHub Commit",
+          "url": "https://github.com/aspnet/AspNetCore/commit/b9c8f3491937c5c756cfc244d1da5a956faca19e"
+        },
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/aspnet/Announcements/issues/373"
+        },
+        {
+          "title": "Microsoft Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1075"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2.1.0 ,2.1.12)",
+          "[2.2.0,2.2.6)"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Open Redirect",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "Microsoft.NETCore.App@2.2.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "Microsoft.NETCore.App",
+      "version": "2.2.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H/RL:O",
+      "alternativeIds": [],
+      "creationTime": "2019-01-09T13:00:30.826174Z",
+      "credit": [
+        "Barry Dorrans"
+      ],
+      "cvssScore": 5.9,
+      "description": "## Overview\n[Microsoft.NETCore.App](https://www.nuget.org/packages/Microsoft.NETCore.App) is a set of .NET API's that are included in the default .NET Core application model.\n\nAffected versions of this package are vulnerable to Denial of Service (DoS). An unauthenticated attacker can cause a denial of service remotely, by issuing specially crafted requests to the .NET Core application. This is caused by an improper handling of a web request in ASP.NET Core. This CVE ID is unique from CVE-2019-0548.\n\n## Details\n\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\n\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\n\nLet’s take the following regular expression as an example:\n```js\nregex = /A(B|C+)+D/\n```\n\nThis regular expression accomplishes the following:\n- `A` The string must start with the letter 'A'\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\n- `D` Finally, we ensure this section of the string ends with a 'D'\n\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\n\nIt most cases, it doesn't take very long for a regex engine to find a match:\n\n```bash\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\n0.04s user 0.01s system 95% cpu 0.052 total\n\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\n1.79s user 0.02s system 99% cpu 1.812 total\n```\n\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\n\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\n\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\n1. CCC\n2. CC+C\n3. C+CC\n4. C+C+C.\n\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\n\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\n\n| String | Number of C's | Number of steps |\n| -------|-------------:| -----:|\n| ACCCX | 3 | 38\n| ACCCCX | 4 | 71\n| ACCCCCX | 5 | 136\n| ACCCCCCCCCCCCCCX | 14 | 65,553\n\n\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\nUpgrade `Microsoft.NETCore.App` to version 2.2.1, 2.1.7 or higher.\n## References\n- [GitHub Issue](https://github.com/aspnet/Announcements/issues/334)\n- [Microsoft Security Guidance](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0564)\n",
+      "disclosureTime": "2019-01-08T20:32:39Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "2.2.1",
+        "2.1.7"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-MICROSOFTNETCOREAPP-72895",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0564"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2019-01-10T09:27:20.978680Z",
+      "moduleName": "microsoft.netcore.app",
+      "packageManager": "nuget",
+      "packageName": "Microsoft.NETCore.App",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-01-10T09:27:21.069255Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/aspnet/Announcements/issues/334"
+        },
+        {
+          "title": "Microsoft Security Guidance",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0564"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[2.2.0,2.2.1)",
+          "[2.1.0,2.1.7)"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Denial of Service (DoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "Microsoft.NETCore.App@2.2.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "Microsoft.NETCore.App",
+      "version": "2.2.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+      "alternativeIds": [],
+      "creationTime": "2019-07-21T10:10:36.600135Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 5.6,
+      "description": "## Overview\n[System.Management.Automation](https://www.nuget.org/packages/System.Management.Automation.dll/) is a System Management Automation for PowerShell.\n\nAffected versions of this package are vulnerable to Access Restriction Bypass. A security feature bypass vulnerability exists in Windows Defender Application Control (WDAC) which could allow an attacker to bypass `WDAC` enforcement.\n## Remediation\nUpgrade `System.Management.Automation` to version 6.1.5, 6.2.2 or higher.\n## References\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1167)\n",
+      "disclosureTime": "2019-07-19T15:46:39Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "6.1.5",
+        "6.2.2"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMMANAGEMENTAUTOMATION-451667",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-1167"
+        ],
+        "CWE": [
+          "CWE-284"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2020-06-12T14:37:01.611689Z",
+      "moduleName": "system.management.automation",
+      "packageManager": "nuget",
+      "packageName": "System.Management.Automation",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-07-21T11:35:13Z",
+      "references": [
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1167"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[6.1.0, 6.1.5)",
+          "[6.2.0, 6.2.2)"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Access Restriction Bypass",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Management.Automation",
+      "version": "6.1.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+      "alternativeIds": [],
+      "creationTime": "2019-11-28T10:35:00.794614Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 5.3,
+      "description": "## Overview\n[System.Management.Automation](https://www.nuget.org/packages/System.Management.Automation.dll/) is a System Management Automation for PowerShell.\n\nAffected versions of this package are vulnerable to Improper Input Validation. PowerShell Core or .NET Core improperly handles web requests. An attacker who successfully exploited this vulnerability could cause a denial of service against a PowerShell Core script.\n## Remediation\nUpgrade `System.Management.Automation` to version 6.2.3, 6.1.6 or higher.\n## References\n- [GitHub Advisory](https://github.com/PowerShell/PowerShell/security/advisories/GHSA-62gw-3rmj-wmp2)\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1301)\n",
+      "disclosureTime": "2019-09-11T22:15:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "6.2.3",
+        "6.1.6"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMMANAGEMENTAUTOMATION-536079",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-1301"
+        ],
+        "CWE": [
+          "CWE-20"
+        ],
+        "GHSA": [
+          "GHSA-62gw-3rmj-wmp2"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2020-06-12T14:37:03.381056Z",
+      "moduleName": "system.management.automation",
+      "packageManager": "nuget",
+      "packageName": "System.Management.Automation",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-11-26T10:16:06Z",
+      "references": [
+        {
+          "title": "GitHub Advisory",
+          "url": "https://github.com/PowerShell/PowerShell/security/advisories/GHSA-62gw-3rmj-wmp2"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-1301"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[6.2.0,6.2.3)",
+          "[,6.1.6)"
+        ]
+      },
+      "severity": "medium",
+      "severityWithCritical": "medium",
+      "title": "Improper Input Validation",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Management.Automation",
+      "version": "6.1.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-05-15T16:00:51.866263Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n\n[System.Text.RegularExpressions](https://www.nuget.org/packages/System.Text.RegularExpressions/) is a regular expression engine.\n\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS)\ndue to improperly processing of RegEx strings.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\r\n\r\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\r\n\r\nLet’s take the following regular expression as an example:\r\n```js\r\nregex = /A(B|C+)+D/\r\n```\r\n\r\nThis regular expression accomplishes the following:\r\n- `A` The string must start with the letter 'A'\r\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\r\n- `D` Finally, we ensure this section of the string ends with a 'D'\r\n\r\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\r\n\r\nIt most cases, it doesn't take very long for a regex engine to find a match:\r\n\r\n```bash\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\r\n0.04s user 0.01s system 95% cpu 0.052 total\r\n\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\r\n1.79s user 0.02s system 99% cpu 1.812 total\r\n```\r\n\r\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\r\n\r\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\r\n\r\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\r\n1. CCC\r\n2. CC+C\r\n3. C+CC\r\n4. C+C+C.\r\n\r\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\r\n\r\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\r\n\r\n| String | Number of C's | Number of steps |\r\n| -------|-------------:| -----:|\r\n| ACCCX | 3 | 38\r\n| ACCCCX | 4 | 71\r\n| ACCCCCX | 5 | 136\r\n| ACCCCCCCCCCCCCCX | 14 | 65,553\r\n\r\n\r\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\n\nUpgrade `System.Text.RegularExpressions` to version 4.3.1 or higher.\n\n\n## References\n\n- [GitHub Issue](https://github.com/dotnet/announcements/issues/111)\n\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820)\n",
+      "disclosureTime": "2019-05-14T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.3.1"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMTEXTREGULAREXPRESSIONS-174708",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0820"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2019-05-16T17:17:39.462702Z",
+      "moduleName": "system.text.regularexpressions",
+      "packageManager": "nuget",
+      "packageName": "System.Text.RegularExpressions",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-05-16T15:55:53Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/dotnet/announcements/issues/111"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[4.3.0, 4.3.1)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0",
+        "Microsoft.Management.Infrastructure@1.0.0",
+        "System.Runtime.Serialization.Xml@4.3.0",
+        "System.Xml.ReaderWriter@4.3.0",
+        "System.Text.RegularExpressions@4.3.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Text.RegularExpressions",
+      "version": "4.3.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-05-15T16:00:51.866263Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n\n[System.Text.RegularExpressions](https://www.nuget.org/packages/System.Text.RegularExpressions/) is a regular expression engine.\n\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS)\ndue to improperly processing of RegEx strings.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\r\n\r\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\r\n\r\nLet’s take the following regular expression as an example:\r\n```js\r\nregex = /A(B|C+)+D/\r\n```\r\n\r\nThis regular expression accomplishes the following:\r\n- `A` The string must start with the letter 'A'\r\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\r\n- `D` Finally, we ensure this section of the string ends with a 'D'\r\n\r\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\r\n\r\nIt most cases, it doesn't take very long for a regex engine to find a match:\r\n\r\n```bash\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\r\n0.04s user 0.01s system 95% cpu 0.052 total\r\n\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\r\n1.79s user 0.02s system 99% cpu 1.812 total\r\n```\r\n\r\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\r\n\r\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\r\n\r\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\r\n1. CCC\r\n2. CC+C\r\n3. C+CC\r\n4. C+C+C.\r\n\r\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\r\n\r\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\r\n\r\n| String | Number of C's | Number of steps |\r\n| -------|-------------:| -----:|\r\n| ACCCX | 3 | 38\r\n| ACCCCX | 4 | 71\r\n| ACCCCCX | 5 | 136\r\n| ACCCCCCCCCCCCCCX | 14 | 65,553\r\n\r\n\r\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\n\nUpgrade `System.Text.RegularExpressions` to version 4.3.1 or higher.\n\n\n## References\n\n- [GitHub Issue](https://github.com/dotnet/announcements/issues/111)\n\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820)\n",
+      "disclosureTime": "2019-05-14T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.3.1"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMTEXTREGULAREXPRESSIONS-174708",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0820"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2019-05-16T17:17:39.462702Z",
+      "moduleName": "system.text.regularexpressions",
+      "packageManager": "nuget",
+      "packageName": "System.Text.RegularExpressions",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-05-16T15:55:53Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/dotnet/announcements/issues/111"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[4.3.0, 4.3.1)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0",
+        "Microsoft.Management.Infrastructure@1.0.0",
+        "System.Runtime.Serialization.Xml@4.3.0",
+        "System.Private.DataContractSerialization@4.3.0",
+        "System.Text.RegularExpressions@4.3.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Text.RegularExpressions",
+      "version": "4.3.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-05-15T16:00:51.866263Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n\n[System.Text.RegularExpressions](https://www.nuget.org/packages/System.Text.RegularExpressions/) is a regular expression engine.\n\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS)\ndue to improperly processing of RegEx strings.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\r\n\r\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\r\n\r\nLet’s take the following regular expression as an example:\r\n```js\r\nregex = /A(B|C+)+D/\r\n```\r\n\r\nThis regular expression accomplishes the following:\r\n- `A` The string must start with the letter 'A'\r\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\r\n- `D` Finally, we ensure this section of the string ends with a 'D'\r\n\r\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\r\n\r\nIt most cases, it doesn't take very long for a regex engine to find a match:\r\n\r\n```bash\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\r\n0.04s user 0.01s system 95% cpu 0.052 total\r\n\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\r\n1.79s user 0.02s system 99% cpu 1.812 total\r\n```\r\n\r\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\r\n\r\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\r\n\r\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\r\n1. CCC\r\n2. CC+C\r\n3. C+CC\r\n4. C+C+C.\r\n\r\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\r\n\r\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\r\n\r\n| String | Number of C's | Number of steps |\r\n| -------|-------------:| -----:|\r\n| ACCCX | 3 | 38\r\n| ACCCCX | 4 | 71\r\n| ACCCCCX | 5 | 136\r\n| ACCCCCCCCCCCCCCX | 14 | 65,553\r\n\r\n\r\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\n\nUpgrade `System.Text.RegularExpressions` to version 4.3.1 or higher.\n\n\n## References\n\n- [GitHub Issue](https://github.com/dotnet/announcements/issues/111)\n\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820)\n",
+      "disclosureTime": "2019-05-14T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.3.1"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMTEXTREGULAREXPRESSIONS-174708",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0820"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2019-05-16T17:17:39.462702Z",
+      "moduleName": "system.text.regularexpressions",
+      "packageManager": "nuget",
+      "packageName": "System.Text.RegularExpressions",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-05-16T15:55:53Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/dotnet/announcements/issues/111"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[4.3.0, 4.3.1)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0",
+        "Microsoft.Management.Infrastructure@1.0.0",
+        "System.Runtime.Serialization.Xml@4.3.0",
+        "System.Private.DataContractSerialization@4.3.0",
+        "System.Xml.ReaderWriter@4.3.0",
+        "System.Text.RegularExpressions@4.3.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Text.RegularExpressions",
+      "version": "4.3.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-05-15T16:00:51.866263Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n\n[System.Text.RegularExpressions](https://www.nuget.org/packages/System.Text.RegularExpressions/) is a regular expression engine.\n\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS)\ndue to improperly processing of RegEx strings.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\r\n\r\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\r\n\r\nLet’s take the following regular expression as an example:\r\n```js\r\nregex = /A(B|C+)+D/\r\n```\r\n\r\nThis regular expression accomplishes the following:\r\n- `A` The string must start with the letter 'A'\r\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\r\n- `D` Finally, we ensure this section of the string ends with a 'D'\r\n\r\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\r\n\r\nIt most cases, it doesn't take very long for a regex engine to find a match:\r\n\r\n```bash\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\r\n0.04s user 0.01s system 95% cpu 0.052 total\r\n\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\r\n1.79s user 0.02s system 99% cpu 1.812 total\r\n```\r\n\r\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\r\n\r\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\r\n\r\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\r\n1. CCC\r\n2. CC+C\r\n3. C+CC\r\n4. C+C+C.\r\n\r\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\r\n\r\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\r\n\r\n| String | Number of C's | Number of steps |\r\n| -------|-------------:| -----:|\r\n| ACCCX | 3 | 38\r\n| ACCCCX | 4 | 71\r\n| ACCCCCX | 5 | 136\r\n| ACCCCCCCCCCCCCCX | 14 | 65,553\r\n\r\n\r\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\n\nUpgrade `System.Text.RegularExpressions` to version 4.3.1 or higher.\n\n\n## References\n\n- [GitHub Issue](https://github.com/dotnet/announcements/issues/111)\n\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820)\n",
+      "disclosureTime": "2019-05-14T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.3.1"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMTEXTREGULAREXPRESSIONS-174708",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0820"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2019-05-16T17:17:39.462702Z",
+      "moduleName": "system.text.regularexpressions",
+      "packageManager": "nuget",
+      "packageName": "System.Text.RegularExpressions",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-05-16T15:55:53Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/dotnet/announcements/issues/111"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[4.3.0, 4.3.1)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0",
+        "Microsoft.Management.Infrastructure@1.0.0",
+        "System.Runtime.Serialization.Xml@4.3.0",
+        "System.Private.DataContractSerialization@4.3.0",
+        "System.Xml.XmlSerializer@4.3.0",
+        "System.Text.RegularExpressions@4.3.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Text.RegularExpressions",
+      "version": "4.3.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-05-15T16:00:51.866263Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n\n[System.Text.RegularExpressions](https://www.nuget.org/packages/System.Text.RegularExpressions/) is a regular expression engine.\n\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS)\ndue to improperly processing of RegEx strings.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\r\n\r\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\r\n\r\nLet’s take the following regular expression as an example:\r\n```js\r\nregex = /A(B|C+)+D/\r\n```\r\n\r\nThis regular expression accomplishes the following:\r\n- `A` The string must start with the letter 'A'\r\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\r\n- `D` Finally, we ensure this section of the string ends with a 'D'\r\n\r\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\r\n\r\nIt most cases, it doesn't take very long for a regex engine to find a match:\r\n\r\n```bash\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\r\n0.04s user 0.01s system 95% cpu 0.052 total\r\n\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\r\n1.79s user 0.02s system 99% cpu 1.812 total\r\n```\r\n\r\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\r\n\r\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\r\n\r\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\r\n1. CCC\r\n2. CC+C\r\n3. C+CC\r\n4. C+C+C.\r\n\r\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\r\n\r\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\r\n\r\n| String | Number of C's | Number of steps |\r\n| -------|-------------:| -----:|\r\n| ACCCX | 3 | 38\r\n| ACCCCX | 4 | 71\r\n| ACCCCCX | 5 | 136\r\n| ACCCCCCCCCCCCCCX | 14 | 65,553\r\n\r\n\r\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\n\nUpgrade `System.Text.RegularExpressions` to version 4.3.1 or higher.\n\n\n## References\n\n- [GitHub Issue](https://github.com/dotnet/announcements/issues/111)\n\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820)\n",
+      "disclosureTime": "2019-05-14T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.3.1"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMTEXTREGULAREXPRESSIONS-174708",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0820"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2019-05-16T17:17:39.462702Z",
+      "moduleName": "system.text.regularexpressions",
+      "packageManager": "nuget",
+      "packageName": "System.Text.RegularExpressions",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-05-16T15:55:53Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/dotnet/announcements/issues/111"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[4.3.0, 4.3.1)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0",
+        "Microsoft.Management.Infrastructure@1.0.0",
+        "System.Runtime.Serialization.Xml@4.3.0",
+        "System.Private.DataContractSerialization@4.3.0",
+        "System.Xml.XDocument@4.3.0",
+        "System.Xml.ReaderWriter@4.3.0",
+        "System.Text.RegularExpressions@4.3.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Text.RegularExpressions",
+      "version": "4.3.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-05-15T16:00:51.866263Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n\n[System.Text.RegularExpressions](https://www.nuget.org/packages/System.Text.RegularExpressions/) is a regular expression engine.\n\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS)\ndue to improperly processing of RegEx strings.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\r\n\r\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\r\n\r\nLet’s take the following regular expression as an example:\r\n```js\r\nregex = /A(B|C+)+D/\r\n```\r\n\r\nThis regular expression accomplishes the following:\r\n- `A` The string must start with the letter 'A'\r\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\r\n- `D` Finally, we ensure this section of the string ends with a 'D'\r\n\r\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\r\n\r\nIt most cases, it doesn't take very long for a regex engine to find a match:\r\n\r\n```bash\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\r\n0.04s user 0.01s system 95% cpu 0.052 total\r\n\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\r\n1.79s user 0.02s system 99% cpu 1.812 total\r\n```\r\n\r\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\r\n\r\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\r\n\r\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\r\n1. CCC\r\n2. CC+C\r\n3. C+CC\r\n4. C+C+C.\r\n\r\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\r\n\r\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\r\n\r\n| String | Number of C's | Number of steps |\r\n| -------|-------------:| -----:|\r\n| ACCCX | 3 | 38\r\n| ACCCCX | 4 | 71\r\n| ACCCCCX | 5 | 136\r\n| ACCCCCCCCCCCCCCX | 14 | 65,553\r\n\r\n\r\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\n\nUpgrade `System.Text.RegularExpressions` to version 4.3.1 or higher.\n\n\n## References\n\n- [GitHub Issue](https://github.com/dotnet/announcements/issues/111)\n\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820)\n",
+      "disclosureTime": "2019-05-14T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.3.1"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMTEXTREGULAREXPRESSIONS-174708",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0820"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2019-05-16T17:17:39.462702Z",
+      "moduleName": "system.text.regularexpressions",
+      "packageManager": "nuget",
+      "packageName": "System.Text.RegularExpressions",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-05-16T15:55:53Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/dotnet/announcements/issues/111"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[4.3.0, 4.3.1)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0",
+        "Microsoft.Management.Infrastructure@1.0.0",
+        "System.Runtime.Serialization.Xml@4.3.0",
+        "System.Private.DataContractSerialization@4.3.0",
+        "System.Xml.XmlDocument@4.3.0",
+        "System.Xml.ReaderWriter@4.3.0",
+        "System.Text.RegularExpressions@4.3.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Text.RegularExpressions",
+      "version": "4.3.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-05-15T16:00:51.866263Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n\n[System.Text.RegularExpressions](https://www.nuget.org/packages/System.Text.RegularExpressions/) is a regular expression engine.\n\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS)\ndue to improperly processing of RegEx strings.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\r\n\r\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\r\n\r\nLet’s take the following regular expression as an example:\r\n```js\r\nregex = /A(B|C+)+D/\r\n```\r\n\r\nThis regular expression accomplishes the following:\r\n- `A` The string must start with the letter 'A'\r\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\r\n- `D` Finally, we ensure this section of the string ends with a 'D'\r\n\r\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\r\n\r\nIt most cases, it doesn't take very long for a regex engine to find a match:\r\n\r\n```bash\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\r\n0.04s user 0.01s system 95% cpu 0.052 total\r\n\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\r\n1.79s user 0.02s system 99% cpu 1.812 total\r\n```\r\n\r\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\r\n\r\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\r\n\r\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\r\n1. CCC\r\n2. CC+C\r\n3. C+CC\r\n4. C+C+C.\r\n\r\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\r\n\r\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\r\n\r\n| String | Number of C's | Number of steps |\r\n| -------|-------------:| -----:|\r\n| ACCCX | 3 | 38\r\n| ACCCCX | 4 | 71\r\n| ACCCCCX | 5 | 136\r\n| ACCCCCCCCCCCCCCX | 14 | 65,553\r\n\r\n\r\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\n\nUpgrade `System.Text.RegularExpressions` to version 4.3.1 or higher.\n\n\n## References\n\n- [GitHub Issue](https://github.com/dotnet/announcements/issues/111)\n\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820)\n",
+      "disclosureTime": "2019-05-14T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.3.1"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMTEXTREGULAREXPRESSIONS-174708",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0820"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2019-05-16T17:17:39.462702Z",
+      "moduleName": "system.text.regularexpressions",
+      "packageManager": "nuget",
+      "packageName": "System.Text.RegularExpressions",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-05-16T15:55:53Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/dotnet/announcements/issues/111"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[4.3.0, 4.3.1)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0",
+        "Microsoft.Management.Infrastructure@1.0.0",
+        "System.Runtime.Serialization.Xml@4.3.0",
+        "System.Private.DataContractSerialization@4.3.0",
+        "System.Xml.XmlSerializer@4.3.0",
+        "System.Xml.ReaderWriter@4.3.0",
+        "System.Text.RegularExpressions@4.3.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Text.RegularExpressions",
+      "version": "4.3.0"
+    },
+    {
+      "CVSSv3": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "alternativeIds": [],
+      "creationTime": "2019-05-15T16:00:51.866263Z",
+      "credit": [
+        "Unknown"
+      ],
+      "cvssScore": 7.5,
+      "description": "## Overview\n\n[System.Text.RegularExpressions](https://www.nuget.org/packages/System.Text.RegularExpressions/) is a regular expression engine.\n\n\nAffected versions of this package are vulnerable to Regular Expression Denial of Service (ReDoS)\ndue to improperly processing of RegEx strings.\n\n## Details\nDenial of Service (DoS) describes a family of attacks, all aimed at making a system inaccessible to its original and legitimate users. There are many types of DoS attacks, ranging from trying to clog the network pipes to the system by generating a large volume of traffic from many machines (a Distributed Denial of Service - DDoS - attack) to sending crafted requests that cause a system to crash or take a disproportional amount of time to process.\r\n\r\nThe Regular expression Denial of Service (ReDoS) is a type of Denial of Service attack. Regular expressions are incredibly powerful, but they aren't very intuitive and can ultimately end up making it easy for attackers to take your site down.\r\n\r\nLet’s take the following regular expression as an example:\r\n```js\r\nregex = /A(B|C+)+D/\r\n```\r\n\r\nThis regular expression accomplishes the following:\r\n- `A` The string must start with the letter 'A'\r\n- `(B|C+)+` The string must then follow the letter A with either the letter 'B' or some number of occurrences of the letter 'C' (the `+` matches one or more times). The `+` at the end of this section states that we can look for one or more matches of this section.\r\n- `D` Finally, we ensure this section of the string ends with a 'D'\r\n\r\nThe expression would match inputs such as `ABBD`, `ABCCCCD`, `ABCBCCCD` and `ACCCCCD`\r\n\r\nIt most cases, it doesn't take very long for a regex engine to find a match:\r\n\r\n```bash\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCD\")'\r\n0.04s user 0.01s system 95% cpu 0.052 total\r\n\r\n$ time node -e '/A(B|C+)+D/.test(\"ACCCCCCCCCCCCCCCCCCCCCCCCCCCCX\")'\r\n1.79s user 0.02s system 99% cpu 1.812 total\r\n```\r\n\r\nThe entire process of testing it against a 30 characters long string takes around ~52ms. But when given an invalid string, it takes nearly two seconds to complete the test, over ten times as long as it took to test a valid string. The dramatic difference is due to the way regular expressions get evaluated.\r\n\r\nMost Regex engines will work very similarly (with minor differences). The engine will match the first possible way to accept the current character and proceed to the next one. If it then fails to match the next one, it will backtrack and see if there was another way to digest the previous character. If it goes too far down the rabbit hole only to find out the string doesn’t match in the end, and if many characters have multiple valid regex paths, the number of backtracking steps can become very large, resulting in what is known as _catastrophic backtracking_.\r\n\r\nLet's look at how our expression runs into this problem, using a shorter string: \"ACCCX\". While it seems fairly straightforward, there are still four different ways that the engine could match those three C's:\r\n1. CCC\r\n2. CC+C\r\n3. C+CC\r\n4. C+C+C.\r\n\r\nThe engine has to try each of those combinations to see if any of them potentially match against the expression. When you combine that with the other steps the engine must take, we can use [RegEx 101 debugger](https://regex101.com/debugger) to see the engine has to take a total of 38 steps before it can determine the string doesn't match.\r\n\r\nFrom there, the number of steps the engine must use to validate a string just continues to grow.\r\n\r\n| String | Number of C's | Number of steps |\r\n| -------|-------------:| -----:|\r\n| ACCCX | 3 | 38\r\n| ACCCCX | 4 | 71\r\n| ACCCCCX | 5 | 136\r\n| ACCCCCCCCCCCCCCX | 14 | 65,553\r\n\r\n\r\nBy the time the string includes 14 C's, the engine has to take over 65,000 steps just to see if the string is valid. These extreme situations can cause them to work very slowly (exponentially related to input size, as shown above), allowing an attacker to exploit this and can cause the service to excessively consume CPU, resulting in a Denial of Service.\n\n## Remediation\n\nUpgrade `System.Text.RegularExpressions` to version 4.3.1 or higher.\n\n\n## References\n\n- [GitHub Issue](https://github.com/dotnet/announcements/issues/111)\n\n- [Microsoft Security Advisory](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820)\n",
+      "disclosureTime": "2019-05-14T07:00:00Z",
+      "exploit": "Not Defined",
+      "fixedIn": [
+        "4.3.1"
+      ],
+      "functions": [],
+      "functions_new": [],
+      "id": "SNYK-DOTNET-SYSTEMTEXTREGULAREXPRESSIONS-174708",
+      "identifiers": {
+        "CVE": [
+          "CVE-2019-0820"
+        ],
+        "CWE": [
+          "CWE-400"
+        ]
+      },
+      "language": "dotnet",
+      "modificationTime": "2019-05-16T17:17:39.462702Z",
+      "moduleName": "system.text.regularexpressions",
+      "packageManager": "nuget",
+      "packageName": "System.Text.RegularExpressions",
+      "patches": [],
+      "proprietary": false,
+      "publicationTime": "2019-05-16T15:55:53Z",
+      "references": [
+        {
+          "title": "GitHub Issue",
+          "url": "https://github.com/dotnet/announcements/issues/111"
+        },
+        {
+          "title": "Microsoft Security Advisory",
+          "url": "https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2019-0820"
+        }
+      ],
+      "semver": {
+        "vulnerable": [
+          "[4.3.0, 4.3.1)"
+        ]
+      },
+      "severity": "high",
+      "severityWithCritical": "high",
+      "title": "Regular Expression Denial of Service (ReDoS)",
+      "from": [
+        "dotNet-goof-github@1.0.0",
+        "System.Management.Automation@6.1.0",
+        "Microsoft.Management.Infrastructure@1.0.0",
+        "System.Runtime.Serialization.Xml@4.3.0",
+        "System.Private.DataContractSerialization@4.3.0",
+        "System.Xml.XmlSerializer@4.3.0",
+        "System.Xml.XmlDocument@4.3.0",
+        "System.Xml.ReaderWriter@4.3.0",
+        "System.Text.RegularExpressions@4.3.0"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "System.Text.RegularExpressions",
+      "version": "4.3.0"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 67,
+  "org": "steven.schmidt",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.19.0\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "0BSD": {
+        "licenseType": "0BSD",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Adobe-2006": {
+        "licenseType": "Adobe-2006",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "high",
+        "instructions": null
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": "Copyleft. Requires any code using this license to be released under the same GPL license."
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": "Copyleft. Requires any code using this license to be released under the same GPL license."
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Unknown": {
+        "licenseType": "Unknown",
+        "severity": "low",
+        "instructions": "Unknown license, please review."
+      },
+      "HSQLDB": {
+        "licenseType": "HSQLDB",
+        "severity": "high",
+        "instructions": "non-SPDX license, please contact legal"
+      },
+      "Unspecified-Commercial": {
+        "licenseType": "Unspecified-Commercial",
+        "severity": "low",
+        "instructions": ""
+      },
+      "EDL-1.0": {
+        "licenseType": "EDL-1.0",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Microsoft-Lightswitch-Client-Javascript-Runtime": {
+        "licenseType": "Microsoft-Lightswitch-Client-Javascript-Runtime",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Neodynamic": {
+        "licenseType": "Neodynamic",
+        "severity": "low",
+        "instructions": ""
+      },
+      "bpmn.io": {
+        "licenseType": "bpmn.io",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Froala-Editor": {
+        "licenseType": "Froala-Editor",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Image-Components-SDK": {
+        "licenseType": "Image-Components-SDK",
+        "severity": "low",
+        "instructions": ""
+      },
+      "AppOptics-Java-Agent": {
+        "licenseType": "AppOptics-Java-Agent",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Aspose-EULA": {
+        "licenseType": "Aspose-EULA",
+        "severity": "low",
+        "instructions": ""
+      },
+      "ASPSecurityKit-Khosla-Tech": {
+        "licenseType": "ASPSecurityKit-Khosla-Tech",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Chilkat-Software": {
+        "licenseType": "Chilkat-Software",
+        "severity": "low",
+        "instructions": ""
+      },
+      "H2-Database-1.0": {
+        "licenseType": "H2-Database-1.0",
+        "severity": "low",
+        "instructions": ""
+      },
+      "amCharts-Free": {
+        "licenseType": "amCharts-Free",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Facebook-Platform": {
+        "licenseType": "Facebook-Platform",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Highsoft": {
+        "licenseType": "Highsoft",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Oracle-Technology-Network": {
+        "licenseType": "Oracle-Technology-Network",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Protobuf": {
+        "licenseType": "Protobuf",
+        "severity": "low",
+        "instructions": ""
+      },
+      "Resizer-Freedom": {
+        "licenseType": "Resizer-Freedom",
+        "severity": "low",
+        "instructions": ""
+      },
+      "SpecFlow-EULA": {
+        "licenseType": "SpecFlow-EULA",
+        "severity": "low",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "nuget",
+  "projectId": "b30cbcef-b845-4470-bf5a-9b0c254a75aa",
+  "ignoreSettings": null,
+  "summary": "14 vulnerable dependency paths",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 7,
+  "targetFile": "obj/project.assets.json",
+  "projectName": "dotNet-goof-github",
+  "displayTargetFile": "obj/project.assets.json",
+  "path": "/Users/swschmidt/Snyk Workspace/dotNet-goof-github"
+}
